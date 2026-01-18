@@ -22,7 +22,8 @@ Local OneDrive directory where the symlink will be created.
 Local folder to be synced (real folder).
 
 .EXAMPLE
-.\\sync-onedrive.ps1 -OneDrivePath "C:\\Users\\Kobi-\\OneDrive\\Data" -TargetPath "D:\\Data"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\onedrive-symlink.ps1 -OneDrivePath "C:\\Users\\Kobi-\\OneDrive\\Data" -TargetPath "D:\\Data"
 #>
 
 param (
